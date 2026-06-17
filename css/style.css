@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Sección de productos (Grid) */
+.productos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.producto-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    background: #fafafa;
+}
+
+.producto-card h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.producto-precio {
+    font-size: 20px;
+    color: #437066;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.producto-card button {
+    background: #437066;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.producto-card button:hover {
+    background: #2d4d47;
+}
+
+/* Sección del Carrito */
+.carrito-items {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    min-height: 100px;
+    border: 1px solid #ddd;
+}
+
+.carrito-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: white;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border-left: 4px solid #437066;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+/* Estilos para Totales y Botón Limpiar */
+.totales {
+    background: #fafafa;
+    padding: 15px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    border: 1px dashed #437066;
+}
+
+.totales p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.totales span {
+    font-weight: bold;
+    color: #437066;
+}
+
+#limpiarCarrito {
+    background: #c94c4c;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+}
+
+#limpiarCarrito:hover {
+    background: #b03a3a;
+}
